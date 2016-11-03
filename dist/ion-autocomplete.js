@@ -196,7 +196,8 @@ angular.module('ion-autocomplete', []).directive('ionAutocomplete', [
                                     item: item,
                                     selectedItems: angular.isArray(ionAutocompleteController.selectedItems) ? ionAutocompleteController.selectedItems.slice() : ionAutocompleteController.selectedItems,
                                     selectedItemsArray: angular.isArray(ionAutocompleteController.selectedItems) ? ionAutocompleteController.selectedItems.slice() : [ionAutocompleteController.selectedItems],
-                                    componentId: ionAutocompleteController.componentId
+                                    componentId: ionAutocompleteController.componentId,
+                                    controller:ionAutocompleteController
                                 }
                             });
                         }
